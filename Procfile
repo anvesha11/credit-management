@@ -1,1 +1,1 @@
-web: gunicorn credit.wsgi --log-file
+web: gunicorn credit.wsgi 
