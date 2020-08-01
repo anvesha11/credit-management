@@ -19,15 +19,14 @@
         <div class="container text-center">
             <button class="btn btn-primary my-3" type="button" data-toggle="collapse" data-target="#details"
                 aria-expanded="false" aria-controls="collapseExample" title="Transfer credits now!">
-                Transfer Credit
+                Transfer Credits To Another User
             </button>
             <div class="collapse my-2 userform" id="details">
                 <div class="card card-body">
                     <form action="/user/{{user.name}}/confirmation" method="POST">
                         {% csrf_token %}
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label text-right">Recipient User<span
-                                    style="color: red;">*</span>:</label>
+                            <label class="col-sm-3 col-form-label text-right">Recipient User<span></span>:</label>
                             <select required class="form-control col-sm-8" id="recipient" name="recipient">
                                 <option selected></option>
                                 {% for usr in users %}
@@ -38,8 +37,7 @@
                             </select>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label text-right">Credit(s)<span
-                                    style="color: red;">*</span>:</label>
+                            <label class="col-sm-3 col-form-label text-right">Number of Credits<span></span>:</label>
                             <input class="col-sm-8" type="number" id="credit" name="credit" required>
                         </div>
                         <button type="submit" class="btn btn-success">Submit</button>

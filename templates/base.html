@@ -10,14 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <style>
-      .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: black;
-        color: white;
-        text-align: center;
+      
+      body{
+        background-image: url("https://papers.co/wallpaper/papers.co-mr12-wave-sea-nature-water-cool-white-36-3840x2400-4k-wallpaper.jpg");
+        background-position: fixed; 
+        background-repeat: no-repeat; 
+        background-size: 100%; 
+        background-overflow: hidden;
       }
       </style>
 
@@ -26,32 +25,9 @@
     <title>{% block title %}{% endblock title %}</title>
   </head>
   <body>
-    <!-- navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">Credit Manager</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item {% block homeactive %}{% endblock homeactive %}">
-            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item {% block transferactive %}{% endblock transferactive %}">
-            <a class="nav-link" href="/transfer_credit">Transfer Credit</a>
-          </li>
-        </ul>
-      </div>
-    </nav> -->
 
     {% block body %}
     {% endblock body %}
-
-    <div class="footer">
-      &copy; Credit Manager 2020
-    </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
